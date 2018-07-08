@@ -32,7 +32,7 @@
     "moment": "^2.20.1",
     "passport": "^0.4.0",
     "passport-jwt": "^3.0.1",
-    "sinnott-orm-typed": "sinnott74/orm-typed"
+    "sinnott-orm-typed": "sinnott74/orm-typed#c938e88"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.1",

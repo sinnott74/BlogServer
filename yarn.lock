@@ -3889,9 +3889,9 @@ signal-exit@^3.0.0, signal-exit@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
 
-sinnott-orm-typed@sinnott74/orm-typed:
+sinnott-orm-typed@sinnott74/orm-typed#c938e88:
   version "0.0.1"
-  resolved "https://codeload.github.com/sinnott74/orm-typed/tar.gz/3abfec9cdbb4a04df227c98a9a5384f5e87e2d26"
+  resolved "https://codeload.github.com/sinnott74/orm-typed/tar.gz/c938e889ccf7dcc497c40d43853ee87bca650401"
   dependencies:
     "@types/lodash.isplainobject" "^4.0.3"
     "@types/on-finished" "2.3.1"
@@ -3903,6 +3903,7 @@ sinnott-orm-typed@sinnott74/orm-typed:
     reflect-metadata "^0.1.12"
     sql "^0.78.0"
     toposort "^1.0.6"
+    typescript "^2.7.2"
     uuid "^3.2.1"
 
 slash@^1.0.0:
