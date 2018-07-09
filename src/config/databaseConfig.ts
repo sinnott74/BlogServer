@@ -13,11 +13,6 @@ export interface ConnectionConfig {
 let config: ConnectionConfig;
 if (process.env.NODE_ENV === "production") {
   // Production
-  // config = {
-  //   connectionString: cfenv.getAppEnv().getServices("postgresql")["ElephantSQL"]
-  //     .credentials.uri,
-  //   max: 5
-  // };
   config = {
     connectionString: process.env.POSTGRES_URL,
     max: 5
