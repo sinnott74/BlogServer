@@ -29,7 +29,6 @@
     "baseUrl": ".",
     "rootDirs": ["src"],
     "paths": {
-      // "sinnott-orm-typed": ["node_modules/sinnott-orm-typed/"],
       "*": ["node_modules/*", "src/types/*"]
     }
   },
