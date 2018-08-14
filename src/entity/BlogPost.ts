@@ -21,6 +21,9 @@ export default class BlogPost extends BaseModel {
   @Column({ type: TEXT, notNull: true })
   text: string;
 
+  @Column({ type: STRING, notNull: true, length: 255 })
+  imageurl: string;
+
   @Column({ type: TIMESTAMP, notNull: true })
   created_on: Date;
 
