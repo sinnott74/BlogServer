@@ -1,4 +1,4 @@
-import { Router } from "express";
+import { Router, Request, Response } from "express";
 import Auth from "../core/Auth";
 // import { User, Credential } from "../entity";
 const router = Router();
@@ -6,7 +6,7 @@ const router = Router();
 /**
  * Route to log a user in
  */
-router.post("/login", async function(req, res) {
+router.post("/login", async function(req: Request, res: Response) {
   let username = req.body.username;
   let password = req.body.password;
 

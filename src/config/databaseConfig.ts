@@ -1,5 +1,3 @@
-// import cfenv from "cfenv";
-
 export interface ConnectionConfig {
   user?: string;
   database?: string;
