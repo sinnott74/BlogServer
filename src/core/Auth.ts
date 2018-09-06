@@ -31,8 +31,9 @@ class Auth {
   static middleware(req: Request, res: Response, next: NextFunction) {
     Auth._authenticate((err: Error, user: User, info: any) => {
       if (err || !user) {
-        console.log(err);
-        return next(new AuthenticationError());
+        console.log(err, info);
+
+        return next(new AuthenticationError(info ? info.message : null));
       }
       // TransactionInfo.set("user", user);
       next();
@@ -104,9 +105,14 @@ class Auth {
    * @returns {Promise} contains a token, time of expiration & the username
    */
   static async _getToken(username: string) {
+    // const expires = moment
+    //   .utc()
+    //   .add({ days: 7 })
+    //   .unix();
+
     const expires = moment
       .utc()
-      .add({ days: 7 })
+      .add({ seconds: 7 })
       .unix();
 
     const user = await User.readByUsername(username);

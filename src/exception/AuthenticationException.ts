@@ -1,8 +1,11 @@
 import ApplicationException from "./ApplicationException";
 
 class AuthenticationException extends ApplicationException {
-  constructor() {
-    super("Authentication Failed", 401);
+  constructor(message?: string) {
+    if (!message) {
+      message = "Authentication Failed";
+    }
+    super(message, 401);
   }
 }
 
