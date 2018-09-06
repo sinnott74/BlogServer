@@ -71,3 +71,7 @@ Show indexes:
     order by
         t.relname,
     i.relname;
+
+
+Copy data to another databse:
+    pg_dump postgres://user:pass@host/db| psql postgres://user:pass@host2/newdb
