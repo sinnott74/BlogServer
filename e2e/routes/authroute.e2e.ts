@@ -22,15 +22,13 @@ describe("Auth Route", () => {
 
       it("returns text", () => {
         expect(response.header["content-type"]).toEqual(
-          "text/html; charset=utf-8"
+          "application/json; charset=utf-8"
         );
       });
 
       it("returns a test saying credentials not found", () => {
         expect(response.text).toEqual(
-          `Record Not Found on Credential with Key {"active":true,"username":"${
-            wrongCredentials.username
-          }"}`
+          '{"name":"RecordNotFoundException","status":404}'
         );
       });
     });
