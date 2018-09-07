@@ -105,14 +105,9 @@ class Auth {
    * @returns {Promise} contains a token, time of expiration & the username
    */
   static async _getToken(username: string) {
-    // const expires = moment
-    //   .utc()
-    //   .add({ days: 7 })
-    //   .unix();
-
     const expires = moment
       .utc()
-      .add({ seconds: 7 })
+      .add({ days: 7 })
       .unix();
 
     const user = await User.readByUsername(username);
