@@ -31,8 +31,9 @@ class Auth {
   static middleware(req: Request, res: Response, next: NextFunction) {
     Auth._authenticate((err: Error, user: User, info: any) => {
       if (err || !user) {
-        console.log(err);
-        return next(new AuthenticationError());
+        console.log(err, info);
+
+        return next(new AuthenticationError(info ? info.message : null));
       }
       // TransactionInfo.set("user", user);
       next();

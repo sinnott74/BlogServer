@@ -9,5 +9,5 @@ export default function(
 ) {
   console.log(err);
   const status = err.status || 500;
-  res.status(status).send(err.message);
+  res.status(status).send(err);
 }
