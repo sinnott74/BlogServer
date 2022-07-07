@@ -33,7 +33,7 @@
     "express-async-errors": "^2.1.0",
     "helmet": "^3.9.0",
     "jsonwebtoken": "^8.1.1",
-    "moment": "^2.20.1",
+    "moment": "^2.29.4",
     "passport": "^0.4.0",
     "passport-jwt": "^3.0.1",
     "sinnott-orm-typed": "sinnott74/orm-typed#952bd46",
